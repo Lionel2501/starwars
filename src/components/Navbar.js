@@ -1,14 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
+
 
 function Navbar() {
-
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/files/cv_lionel_cassar_programador.pdf'; // Ruta pública al archivo
+    link.download = 'lionel_cassar_cv.pdf';  // Nombre con el que se descargará
+    link.click();
+  };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav 
+      className="navbar navbar-expand-lg navbar-light mb-10"
+      style={{ "backgroundColor": "#6c757d"}}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          MonPortfolio
+        <Link className="navbar-brand text-white" to="/">
+          Lionel Cassar
         </Link>
         <button
           className="navbar-toggler"
@@ -24,29 +33,34 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link text-white" to="/">
                 Accueil
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/experience">
+              <Link className="nav-link text-white" to="/experience">
               Expérience
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/technologies">
+              <Link className="nav-link text-white" to="/technologies">
                 Technologies
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/demo">
+              <Link className="nav-link text-white" to="/demo">
                 Demo
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link text-white" to="/contact">
                 Contact
               </Link>
+            </li>
+            <li>
+              <Button size="small" variant="contained" color="primary" onClick={handleDownload}>
+                Résumé
+              </Button>
             </li>
           </ul>
         </div>
