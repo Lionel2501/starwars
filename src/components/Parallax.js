@@ -31,10 +31,10 @@ const ParallaxCard = () => {
         // className="parallax_card"
         ref={cardRef}
         style={{
-          "padding": "15px",
+          "padding": "30px",
           "display": "flex",
           "justifyContent": "space-around",
-          "width": "800px",
+          "width": "900px",
           "height": "500px",
           "margin": "auto",
           "borderRadius": "20px",
@@ -44,8 +44,9 @@ const ParallaxCard = () => {
           "transition": "transform .05s linear"
         }}
       >
-          <div className="parallax_text_main">
-            <h1 className="parallax_title">Bonjour ! Je suis Lionel,</ h1>
+          <div style={{ transform: "translateZ(35px)" }}>
+            <h1 >Bonjour ! Je suis Lionel,</h1>
+
             <div className='parallax_text_contain'>
                 <br></br>
                 <div>Début dans la programmation informatique en 2019 en autodidacte, suivi d'études à l'université de Tandil.
@@ -57,8 +58,8 @@ const ParallaxCard = () => {
                 </div>
             </div>
           </div> 
-          <div style={{ "width": "300px"}}>
-            <img style={{ "width": "300px"}} src="/files/avatar.png"/>
+          <div style={{ "width": "400px", transform: "translateZ(35px)" }}>
+            <img style={{ "width": "200px"}} src="/files/avatar.png"/>
           </div>
       </div>
     </div>

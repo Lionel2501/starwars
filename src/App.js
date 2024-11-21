@@ -10,7 +10,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-
       <div className="container mt-4" style={{ minHeight: '80vh' }} >
         <Routes>
           {routes.map((route) => (

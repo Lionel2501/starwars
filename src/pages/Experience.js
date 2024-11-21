@@ -44,12 +44,12 @@ function Experience() {
       <Box sx={{ flexGrow: 1, marginTop: 5, borderColor: '#d3d3d3', border: 1, borderRadius: 2 }}>
         <Grid container spacing={3} sx={{ margin: 3}}>
           <Grid size="grow">
-            Arte y Parte
+            Arte y Parte, Juin 2021 - Janvier 2022
           </Grid>
-          <Grid size="grow">
-            Juin 2021 - Janvier 2022
+          <Grid size={3}>
+            HTML5, CSS3, Javascript
           </Grid>
-          <Grid size={8}>
+          <Grid size={7}>
             <div>
               Responsable de l'implémentation du contenu de la section des cours pour le site
             </div>
