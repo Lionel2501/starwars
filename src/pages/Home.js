@@ -1,12 +1,13 @@
 import React from "react";
 import Parallax from "../components/Parallax";
+import { Container } from "react-bootstrap";
 
 function Home() {
 
   return (
-    <div>
+    <Container>
         <Parallax />
-    </div>
+    </Container>
   );
 }
 

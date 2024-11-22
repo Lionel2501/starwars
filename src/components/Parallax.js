@@ -26,12 +26,12 @@ const ParallaxCard = () => {
   }, []);
 
   return (
-    <div id="parallax_main" ref={mainRef} style={{ height: "80vh", overflow: "hidden" }}>
+    <div id="parallax_main" ref={mainRef} style={{ height: "90vh", overflow: "hidden" }}>
       <div
         // className="parallax_card"
         ref={cardRef}
         style={{
-          "padding": "30px",
+          "padding": "10px",
           "display": "flex",
           "justifyContent": "space-around",
           "width": "900px",
@@ -44,7 +44,7 @@ const ParallaxCard = () => {
           "transition": "transform .05s linear"
         }}
       >
-          <div style={{ transform: "translateZ(35px)" }}>
+          <div style={{ transform: "translateZ(35px)", "padding": "20px", }}>
             <h1 >Bonjour ! Je suis Lionel,</h1>
 
             <div className='parallax_text_contain'>
