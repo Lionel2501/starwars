@@ -4,13 +4,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import routes from "../src/route";
 import Navbar from '../src/components/Navbar';
 import Footer from '../src/components/Footer';
+import Home from '../src/pages/Home';
+import Experience from '../src/pages/Experience';
+import Contact from '../src/pages/Contact';
+import Demo from '../src/pages/Demo';
 
 function App() {
 
   return (
     <Router>
       <Navbar />
-      <div className="container mt-4" style={{ minHeight: '80vh' }} >
+      <Home />
+      <Experience />
+      <Demo />
+      <Contact />
+      {/* <div className="container mt-4" style={{ minHeight: '80vh' }} >
         <Routes>
           {routes.map((route) => (
             <Route
@@ -20,7 +28,7 @@ function App() {
             />
           ))}
         </Routes>
-      </div>
+      </div> */}
       <Footer /> 
     </Router>
   );

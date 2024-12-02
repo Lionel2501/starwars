@@ -26,7 +26,11 @@ const ParallaxCard = () => {
   }, []);
 
   return (
-    <div id="parallax_main" ref={mainRef} style={{ height: "90vh", overflow: "hidden" }}>
+    <div id="parallax_main" ref={mainRef} style={{ 
+        height: "90vh", 
+        overflow: "hidden", display: "flex",
+        justifyContent: "center",
+        alignItems: "center"}}>
       <div
         // className="parallax_card"
         ref={cardRef}
@@ -38,14 +42,18 @@ const ParallaxCard = () => {
           "height": "500px",
           "margin": "auto",
           "borderRadius": "20px",
-          "border": "1px solid #dadada",
+          "border": "1px solid grey",
           "boxShadow": "30px 30px 100px -49px #494848",
           "transformStyle": "preserve-3d",
-          "transition": "transform .05s linear"
+          "transition": "transform .05s linear",
+          "backgroundImage": `url('/files/background_1.jpg')`,
+          "backgroundSize": "cover",
+      "backgroundPosition": "center",
+      "zIndex": -1, // Place derrière le contenu
         }}
       >
           <div style={{ transform: "translateZ(35px)", "padding": "20px", }}>
-            <h1 >Bonjour ! Je suis Lionel,</h1>
+            <h1 >Bienvenue ! Je suis Lionel,</h1>
 
             <div className='parallax_text_contain'>
                 <br></br>
