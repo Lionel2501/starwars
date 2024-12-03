@@ -13,7 +13,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <Experience />
       <Demo />

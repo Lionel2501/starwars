@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 const Contact = () => {
 
   return (
+    <Box sx={{ width: '100%', backgroundColor: 'white' }}>
     <Container maxWidth="lg" style={{ marginTop: "2rem", marginBottom: "2rem" }}>
       <Box sx={{ flexGrow: 1 }}>
       <h1>Contact</h1>
@@ -146,6 +147,7 @@ const Contact = () => {
         </Grid>
       </Box>
     </Container>
+    </Box>
   );
 };
 

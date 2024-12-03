@@ -8,14 +8,15 @@ import Typography from '@mui/material/Typography';
 
 function Experience() {
   return (
-    <Container sx={{ backgroundColor: "white"}}>
+    // <Box sx={{ width: '100%', backgroundColor: 'white' }}>
+    <Container sx={{ width: "100%"}}>
       <h1>Expérience</h1>
-      <Box sx={{ flexGrow: 1, marginTop: 5, boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", borderRadius: 2 }}>
-        <Grid container spacing={3} sx={{ margin: 3, padding: 3 }}>
+      <Box sx={{ flexGrow: 1, marginTop: 5, boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", borderRadius: 2, backgroundColor: 'white' }}>
+        <Grid container spacing={3} sx={{ margin: 3, padding: 3 }} >
           <Grid size={12} styles={{     
-            "display": "flex",
+            "display": "flex"
             // "justifyContent": "space-between"
-          }}>
+          }} >
             <Typography variant="h4" component="h4" gutterBottom sx={{ fontWeight: 'bold' }}>
               Développeur Full Stack
             </Typography>
@@ -31,13 +32,13 @@ function Experience() {
           </Grid>
           <Grid size={12}>
             <Stack direction="row" spacing={2} marginBottom={2} marginTop={1} sx={{ flexWrap: 'wrap', rowGap: '10px', flexFlow: 'start'}}>
+            <Chip size='large' label="PHP" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
+            <Chip size='large' label="MySql" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
+            <Chip size='large' label="Kumbia PHP" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
             <Chip size='large' label="HTML" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
             <Chip size='large' label="CSS" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
             <Chip size='large' label="Bootstrap" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
             <Chip size='large' label="JQuery" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
-            <Chip size='large' label="PHP" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
-            <Chip size='large' label="Kumbia PHP" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
-            <Chip size='large' label="MySql" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
             <Chip size='large' label="GitLab" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
             <Chip size='large' label="WinSCP" sx={{ '& .MuiChip-label': {fontSize: '20px', fontWeight: '600'}}}/>
           </Stack>
@@ -169,6 +170,8 @@ function Experience() {
         </Grid>
       </Box>
     </Container>
+  // </Box>
+
   );
 }
 
